@@ -43,7 +43,6 @@ html,
   background-color: var(--light-container);
 }
 .light-text-secondary {
-  background-color: var(--light-backgroud);
   color: var(--light-secondary-text);
 }
 .light-toggle {
@@ -91,6 +90,7 @@ small {
   align-items: center;
 }
 .toggle {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
