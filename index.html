@@ -15,26 +15,70 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="dark-mode">
-    <main class="main-container dark-box">
-      <nav>
-        <div>devfinder</div>
-        <div class="toggle dark-mode">Dark</div>
+  <body class="dark-mode" id="body-box">
+    <main class="main-container">
+      <nav class="nav">
+        <div class="logo">devfinder</div>
+        <div class="toggle dark-toggle" id="toggle">
+          <small>Dark</small>
+          <img src="assets/icon-sun.svg" alt="Switch mode" id="switch-mode" />
+        </div>
       </nav>
-      <div class="wrapper">
+      <div class="wrapper dark-box">
         <input
+          id="search-box"
           type="text"
           class="search-box dark-box"
           placeholder="Search GitHub username..."
         />
-        <button class="search-btn">Search</button>
+        <button id="search-btn" class="search-btn">Search</button>
       </div>
-      <section>
-        Joined
-        <article class="dark-mode">Repos Followers Following</article>
-      </section>
-    </main>
+      <div id="hero" class="hero dark-box">
+        <img src="assets/hero.png" alt="hero" class="hero-img" />
+        <div class="hero-details">
+          <section class="name-date">
+            <article class="name">
+              <h1>The Octocat</h1>
+              <p class="username">@octocat</p>
+            </article>
+            <p class="date">Joined 25 Jan 2011</p>
+          </section>
+          <p class="about">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros.
+          </p>
+          <section id="stats" class="stats dark-mode">
+            <article>
+              <small>Repos</small>
+              <h2>8</h2>
+            </article>
+            <article>
+              <small>Followers</small>
+              <h2>3938</h2>
+            </article>
+            <article>
+              <small> Following</small>
+              <h2>9</h2>
+            </article>
+          </section>
 
+          <section class="contact">
+            <article class="contact1">
+              <p>San Francisco</p>
+            </article>
+            <article class="contact2">
+              <p>Not Available</p>
+            </article>
+            <article class="contact3">
+              <p>https://github.blog</p>
+            </article>
+            <article class="contact4">
+              <p>@github</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

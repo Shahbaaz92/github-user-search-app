@@ -22,6 +22,7 @@ html,
   padding: 0;
   box-sizing: border-box;
 }
+/**Dark-mode**/
 .dark-mode {
   background-color: var(--dark-backgroud);
   color: var(--dark-primary-text);
@@ -29,7 +30,133 @@ html,
 .dark-box {
   background-color: var(--dark-container);
 }
+.dark-toggle {
+  color: var(--dark-toggle);
+}
+/**Light-mode**/
+
+.light-mode {
+  background-color: var(--light-backgroud);
+  color: var(--light-primary-text);
+}
+.light-box {
+  background-color: var(--light-container);
+}
+.light-text-secondary {
+  background-color: var(--light-backgroud);
+  color: var(--light-secondary-text);
+}
+.light-toggle {
+  color: var(--light-toggle);
+}
+
+/**General styles**/
 
 body {
   font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h1,
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+p {
+  font-size: 15px;
+}
+p.username {
+  color: var(--button-blue);
+  font-size: 16px;
+}
+small {
+  font-size: 13px;
+}
+.toggle small {
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.main-container {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+}
+.toggle:hover {
+  filter: hue-rotate(-0.125turn);
+}
+.wrapper {
+  max-width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.search-box {
+  width: 100%;
+  padding: 22px 32px;
+  border-radius: 15px;
+  border: none;
+}
+.search-btn {
+  position: absolute;
+  border-radius: 10px;
+  background: var(--button-blue);
+  color: var(--dark-primary-text);
+  border: none;
+  width: 105px;
+  height: 50px;
+  text-align: center;
+  top: 6px;
+  right: 10px;
+}
+.hero {
+  display: flex;
+  /* justify-content: ; */
+  border-radius: 15px;
+}
+.hero-img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  margin: 48px;
+}
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 48px;
+  padding-left: 0;
+}
+.name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.about {
+  margin-bottom: 32px;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.contact {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 15px;
 }
